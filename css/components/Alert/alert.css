@@ -1,0 +1,67 @@
+.alert {
+  border-radius: 0.5rem;
+  font-weight: bold;
+  margin: 1rem 0;
+  max-width: 25rem;
+  padding: 1rem;
+}
+
+.alert-f-danger {
+  background: var(--COLOR-RED-200);
+  color: var(--COLOR-RED-500);
+}
+
+.alert-f-info {
+  background: var(--COLOR-CYAN-200);
+  color: var(--COLOR-CYAN-600);
+}
+
+.alert-f-primary {
+  background: var(--COLOR-BRAND-LIGHT);
+  color: var(--COLOR-BRAND);
+}
+
+.alert-f-secondary {
+  background: var(--COLOR-SLATE-300);
+  color: var(--COLOR-SLATE-600);
+}
+
+.alert-f-success {
+  background: var(--COLOR-LIME-200);
+  color: var(--COLOR-LIME-600);
+}
+
+.alert-f-warning {
+  background: var(--COLOR-AMBER-200);
+  color: var(--COLOR-AMBER-600);
+}
+
+.alert-o-danger {
+  border: thin solid var(--COLOR-RED-500);
+  color: var(--COLOR-RED-500);
+}
+
+.alert-o-info {
+  border: thin solid var(--COLOR-CYAN-600);
+  color: var(--COLOR-CYAN-600);
+}
+
+.alert-o-primary {
+  border: thin solid var(--COLOR-BRAND);
+  color: var(--COLOR-BRAND);
+}
+
+.alert-o-secondary {
+  border: thin solid var(--COLOR-SLATE-600);
+  color: var(--COLOR-SLATE-600);
+}
+
+.alert-o-success {
+  border: thin solid var(--COLOR-LIME-600);
+  color: var(--COLOR-LIME-600);
+}
+
+.alert-o-warning {
+  border: thin solid var(--COLOR-AMBER-600);
+  color: var(--COLOR-AMBER-600);
+}
