@@ -1,0 +1,37 @@
+.btn {
+  background: none;
+  border: none;
+  margin: 0.5rem;
+  padding: 1rem 2rem;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background: var(--COLOR-SLATE-300);
+}
+
+/** Button Squared **/
+
+.btn-squared {
+  border-radius: 1rem;
+}
+
+/** Filled Buttons **/
+
+.btn-f-error {
+  background: var(--COLOR-RED-500);
+  color: var(--COLOR-WHITE);
+}
+
+.btn-f-error:hover {
+  background: var(--COLOR-RED-600);
+}
+
+.btn-f-primary {
+  background: var(--COLOR-BRAND);
+  color: var(--COLOR-WHITE);
+}
+
+.btn-f-primary:hover {
+  background: var(--COLOR-BRAND-DARK);
+}
