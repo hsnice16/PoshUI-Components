@@ -1,0 +1,131 @@
+.btn {
+  border: none;
+  margin: 0.5rem;
+  padding: 1rem 2rem;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background: var(--COLOR-SLATE-300);
+}
+
+/** Button Round **/
+
+.btn-rounded {
+  border-radius: 3rem;
+}
+
+/** Button Squared **/
+
+.btn-squared {
+  border-radius: 1rem;
+}
+
+/** Filled Buttons **/
+
+.btn-f-error {
+  background: var(--COLOR-RED-500);
+  color: var(--COLOR-WHITE);
+}
+
+.btn-f-error:hover {
+  background: var(--COLOR-RED-600);
+}
+
+.btn-f-primary {
+  background: var(--COLOR-BRAND);
+  color: var(--COLOR-WHITE);
+}
+
+.btn-f-primary:hover {
+  background: var(--COLOR-BRAND-DARK);
+}
+
+.btn-f-secondary {
+  background: var(--COLOR-SLATE-500);
+  color: var(--COLOR-WHITE);
+}
+
+.btn-f-secondary:hover {
+  background: var(--COLOR-SLATE-600);
+}
+
+.btn-f-success {
+  background: var(--COLOR-LIME-500);
+  color: var(--COLOR-WHITE);
+}
+
+.btn-f-success:hover {
+  background: var(--COLOR-LIME-600);
+}
+
+/** Floating Button **/
+
+.btn-floating {
+  align-items: center;
+  background: var(--COLOR-BRAND);
+  border: medium solid var(--COLOR-BRAND-LIGHT);
+  border-radius: 50%;
+  box-shadow: 0.2rem 0.2rem 1rem 0.1rem var(--COLOR-SLATE-600);
+  color: var(--COLOR-WHITE);
+  display: flex;
+  font-size: 2rem;
+  height: 5rem;
+  justify-content: center;
+  transition: transform 0.2s;
+  width: 5rem;
+}
+
+.btn-floating:focus-visible {
+  outline: none;
+}
+
+.btn-floating:hover {
+  transform: translateY(-10%);
+}
+
+/** Outlined Buttons **/
+
+.btn-o-error {
+  border: thin solid var(--COLOR-RED-600);
+  color: var(--COLOR-RED-600);
+}
+
+.btn-o-error:hover {
+  background: var(--COLOR-RED-500);
+  border: thin solid var(--COLOR-RED-500);
+  color: var(--COLOR-WHITE);
+}
+
+.btn-o-primary {
+  border: thin solid var(--COLOR-BRAND-DARK);
+  color: var(--COLOR-BRAND-DARK);
+}
+
+.btn-o-primary:hover {
+  background: var(--COLOR-BRAND);
+  border: thin solid var(--COLOR-BRAND);
+  color: var(--COLOR-WHITE);
+}
+
+.btn-o-secondary {
+  border: thin solid var(--COLOR-SLATE-600);
+  color: var(--COLOR-SLATE-600);
+}
+
+.btn-o-secondary:hover {
+  background: var(--COLOR-SLATE-500);
+  border: thin solid var(--COLOR-SLATE-500);
+  color: var(--COLOR-WHITE);
+}
+
+.btn-o-success {
+  border: thin solid var(--COLOR-LIME-600);
+  color: var(--COLOR-LIME-600);
+}
+
+.btn-o-success:hover {
+  background: var(--COLOR-LIME-500);
+  border: thin solid var(--COLOR-LIME-500);
+  color: var(--COLOR-WHITE);
+}

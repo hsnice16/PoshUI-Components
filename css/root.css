@@ -6,6 +6,7 @@
   --COLOR-AMBER-600: #d97706;
 
   --COLOR-BRAND: #0d5be1;
+  --COLOR-BRAND-DARK: #0A49B4;
   --COLOR-BRAND-LIGHT: #cfdef9;
 
   --COLOR-CYAN-200: #a5f3fc;
@@ -21,10 +22,12 @@
   --COLOR-RED-50: #fadddd;
   --COLOR-RED-200: #fecaca;
   --COLOR-RED-500: #ef4444;
+  --COLOR-RED-600: #dc2626;
 
   --COLOR-SLATE-50: #f8fafc;
   --COLOR-SLATE-300: #cbd5e1;
   --COLOR-SLATE-400: #94a3b8;
+  --COLOR-SLATE-500: #64748b;
   --COLOR-SLATE-600: #475569;
   --COLOR-SLATE-700: #334155;
 
@@ -39,6 +42,10 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+a {
+  text-decoration: none;
 }
 
 button {
