@@ -9,3 +9,9 @@
 
 @import url("components/Avatar/avatar.css");
 @import url("components/Badge/badge.css");
+
+@import url("components/Card/card.css");
+@import url("components/Card/dismiss.css");
+@import url("components/Card/horizontal.css");
+@import url("components/Card/textOverlay.css");
+@import url("components/Card/vertical.css");

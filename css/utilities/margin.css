@@ -1,12 +1,12 @@
-.margin-lr-1 {
-  margin-left: 1rem;
-  margin-right: 1rem;
-}
-
 .margin-auto {
   margin: auto;
 }
 
 .margin-l-auto {
   margin-left: auto;
+}
+
+.margin-lr-1 {
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
