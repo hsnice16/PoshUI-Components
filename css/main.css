@@ -7,10 +7,13 @@
 
 /** Components **/
 
+@import url("components/Alert/alert.css");
 @import url("components/Avatar/avatar.css");
+
 @import url("components/Badge/badge.css");
 @import url("components/Button/button.css");
-
+@import url("components/Button/outline.css");
+@import url("components/Button/solid.css");
 
 @import url("components/Card/card.css");
 @import url("components/Card/dismiss.css");
