@@ -2,9 +2,13 @@
 
 /** Utilities **/
 
+@import url("utilities/background.css");
 @import url("utilities/margin.css");
 
 /** Components **/
+
+@import url("components/Avatar/avatar.css");
+@import url("components/Badge/badge.css");
 
 @import url("components/Card/card.css");
 @import url("components/Card/dismiss.css");
