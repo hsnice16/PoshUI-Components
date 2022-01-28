@@ -1,4 +1,5 @@
 .btn {
+  background: none;
   border: none;
   margin: 0.5rem;
   padding: 1rem 2rem;
@@ -9,54 +10,16 @@
   background: var(--COLOR-SLATE-300);
 }
 
-/** Button Round **/
+/** Round Button **/
 
 .btn-rounded {
   border-radius: 3rem;
 }
 
-/** Button Squared **/
+/** Squared Button **/
 
 .btn-squared {
   border-radius: 1rem;
-}
-
-/** Filled Buttons **/
-
-.btn-f-error {
-  background: var(--COLOR-RED-500);
-  color: var(--COLOR-WHITE);
-}
-
-.btn-f-error:hover {
-  background: var(--COLOR-RED-600);
-}
-
-.btn-f-primary {
-  background: var(--COLOR-BRAND);
-  color: var(--COLOR-WHITE);
-}
-
-.btn-f-primary:hover {
-  background: var(--COLOR-BRAND-DARK);
-}
-
-.btn-f-secondary {
-  background: var(--COLOR-SLATE-500);
-  color: var(--COLOR-WHITE);
-}
-
-.btn-f-secondary:hover {
-  background: var(--COLOR-SLATE-600);
-}
-
-.btn-f-success {
-  background: var(--COLOR-LIME-500);
-  color: var(--COLOR-WHITE);
-}
-
-.btn-f-success:hover {
-  background: var(--COLOR-LIME-600);
 }
 
 /** Floating Button **/
@@ -82,50 +45,4 @@
 
 .btn-floating:hover {
   transform: translateY(-10%);
-}
-
-/** Outlined Buttons **/
-
-.btn-o-error {
-  border: thin solid var(--COLOR-RED-600);
-  color: var(--COLOR-RED-600);
-}
-
-.btn-o-error:hover {
-  background: var(--COLOR-RED-500);
-  border: thin solid var(--COLOR-RED-500);
-  color: var(--COLOR-WHITE);
-}
-
-.btn-o-primary {
-  border: thin solid var(--COLOR-BRAND-DARK);
-  color: var(--COLOR-BRAND-DARK);
-}
-
-.btn-o-primary:hover {
-  background: var(--COLOR-BRAND);
-  border: thin solid var(--COLOR-BRAND);
-  color: var(--COLOR-WHITE);
-}
-
-.btn-o-secondary {
-  border: thin solid var(--COLOR-SLATE-600);
-  color: var(--COLOR-SLATE-600);
-}
-
-.btn-o-secondary:hover {
-  background: var(--COLOR-SLATE-500);
-  border: thin solid var(--COLOR-SLATE-500);
-  color: var(--COLOR-WHITE);
-}
-
-.btn-o-success {
-  border: thin solid var(--COLOR-LIME-600);
-  color: var(--COLOR-LIME-600);
-}
-
-.btn-o-success:hover {
-  background: var(--COLOR-LIME-500);
-  border: thin solid var(--COLOR-LIME-500);
-  color: var(--COLOR-WHITE);
 }
