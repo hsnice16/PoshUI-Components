@@ -10,28 +10,28 @@
   background: var(--COLOR-SLATE-300);
 }
 
-/** Button Squared **/
+/** Squared Button **/
 
 .btn-squared {
   border-radius: 1rem;
 }
 
-/** Filled Buttons **/
+/** Solid Buttons **/
 
-.btn-f-error {
+.btn-error-solid {
   background: var(--COLOR-RED-500);
   color: var(--COLOR-WHITE);
 }
 
-.btn-f-error:hover {
+.btn-error-solid:hover {
   background: var(--COLOR-RED-600);
 }
 
-.btn-f-primary {
+.btn-primary-solid {
   background: var(--COLOR-BRAND);
   color: var(--COLOR-WHITE);
 }
 
-.btn-f-primary:hover {
+.btn-primary-solid:hover {
   background: var(--COLOR-BRAND-DARK);
 }
