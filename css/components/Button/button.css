@@ -1,0 +1,37 @@
+.btn {
+  background: none;
+  border: none;
+  margin: 0.5rem;
+  padding: 1rem 2rem;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background: var(--COLOR-SLATE-300);
+}
+
+/** Squared Button **/
+
+.btn-squared {
+  border-radius: 1rem;
+}
+
+/** Solid Buttons **/
+
+.btn-error-solid {
+  background: var(--COLOR-RED-500);
+  color: var(--COLOR-WHITE);
+}
+
+.btn-error-solid:hover {
+  background: var(--COLOR-RED-600);
+}
+
+.btn-primary-solid {
+  background: var(--COLOR-BRAND);
+  color: var(--COLOR-WHITE);
+}
+
+.btn-primary-solid:hover {
+  background: var(--COLOR-BRAND-DARK);
+}
