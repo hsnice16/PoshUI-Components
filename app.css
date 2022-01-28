@@ -28,3 +28,8 @@ body {
 .section-head {
   margin: 2rem 0;
 }
+
+.section-text {
+  margin: 1rem 0 2rem;
+  font-size: 1.7rem;
+}
