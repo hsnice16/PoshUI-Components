@@ -1,0 +1,27 @@
+/**************************** Display ****************************/
+
+.d-inline {
+  display: inline;
+}
+
+.d-i-block {
+  display: inline-block;
+}
+
+.d-block {
+  display: block;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.d-i-flex {
+  display: inline-flex;
+}
+
+.d-grid {
+  display: grid;
+}
+
+/**************************** -- ****************************/

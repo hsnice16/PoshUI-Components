@@ -3,7 +3,9 @@
 /** Utilities **/
 
 @import url("utilities/background.css");
+@import url("utilities/display.css");
 @import url("utilities/margin.css");
+@import url("utilities/padding.css");
 
 /** Components **/
 

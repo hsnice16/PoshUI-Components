@@ -1,9 +1,7 @@
+/**************************** Background ****************************/
+
 .bg-amber {
   background: var(--COLOR-AMBER-500);
-}
-
-.bg-online {
-  background: var(--COLOR-LIME-500);
 }
 
 .bg-dnd {
@@ -13,3 +11,9 @@
 .bg-offline {
   background: var(--COLOR-SLATE-400);
 }
+
+.bg-online {
+  background: var(--COLOR-LIME-500);
+}
+
+/**************************** -- ****************************/
