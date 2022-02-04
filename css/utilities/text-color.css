@@ -1,0 +1,19 @@
+.text-red-500 {
+  color: var(--COLOR-RED-500);
+}
+
+.text-slate-600 {
+  color: var(--COLOR-SLATE-600);
+}
+
+.text-slate-800 {
+  color: var(--COLOR-SLATE-800);
+}
+
+.text-slate-800-hover:hover {
+  color: var(--COLOR-SLATE-800);
+}
+
+.text-white {
+  color: var(--COLOR-WHITE);
+}

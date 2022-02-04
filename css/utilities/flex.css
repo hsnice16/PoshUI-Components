@@ -1,0 +1,27 @@
+.align-i-ctr {
+  align-items: center;
+}
+
+.flex-direction-col {
+  flex-direction: column;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.gap-2p5 {
+  gap: 2.5rem;
+}
+
+.justify-c-ctr {
+  justify-content: center;
+}
+
+.justify-c-sa {
+  justify-content: space-around;
+}
+
+.justify-c-sb {
+  justify-content: space-between;
+}

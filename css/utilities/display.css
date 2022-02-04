@@ -1,26 +1,26 @@
-/**************************** Display ****************************/
+/************************* Display **************************/
 
-.d-inline {
+.inline {
   display: inline;
 }
 
-.d-i-block {
+.inline-block {
   display: inline-block;
 }
 
-.d-block {
+.block {
   display: block;
 }
 
-.d-flex {
+.flex {
   display: flex;
 }
 
-.d-i-flex {
+.inline-flex {
   display: inline-flex;
 }
 
-.d-grid {
+.grid {
   display: grid;
 }
 

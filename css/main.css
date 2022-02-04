@@ -1,12 +1,5 @@
 @import url("root.css");
 
-/** Utilities **/
-
-@import url("utilities/background.css");
-@import url("utilities/display.css");
-@import url("utilities/margin.css");
-@import url("utilities/padding.css");
-
 /** Components **/
 
 @import url("components/Alert/alert.css");
@@ -25,3 +18,29 @@
 
 @import url("components/Image/image.css");
 @import url("components/Input/input.css");
+
+/** Utilities **/
+
+@import url("utilities/background.css");
+@import url("utilities/border.css");
+
+@import url("utilities/cursor.css");
+@import url("utilities/display.css");
+
+@import url("utilities/flex.css");
+@import url("utilities/font-size.css");
+@import url("utilities/font-weight.css");
+
+@import url("utilities/height.css");
+@import url("utilities/margin.css");
+
+@import url("utilities/outline.css");
+@import url("utilities/overflow.css");
+
+@import url("utilities/padding.css");
+
+@import url("utilities/text-align.css");
+@import url("utilities/text-color.css");
+@import url("utilities/translate.css");
+
+@import url("utilities/width.css");
