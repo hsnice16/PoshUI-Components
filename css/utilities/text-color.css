@@ -2,6 +2,14 @@
   color: var(--COLOR-GRAY-500);
 }
 
+.text-lime-500 {
+  color: var(--COLOR-LIME-500);
+}
+
+.text-lime-600 {
+  color: var(--COLOR-LIME-600);
+}
+
 .text-red-500 {
   color: var(--COLOR-RED-500);
 }
