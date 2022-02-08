@@ -2,12 +2,40 @@
   border: none;
 }
 
-/** Border Radius **/
-
-.border-r-unset {
-  border-radius: unset;
+.border-bottom-thin {
+  border-bottom-width: thin;
 }
 
-.border-r-10 {
-  border-radius: 10rem;
+.border-bottom-solid {
+  border-bottom-style: solid;
+}
+
+.border-slate-300 {
+  border-color: var(--COLOR-SLATE-300);
+}
+
+.border-slate-500 {
+  border-color: var(--COLOR-SLATE-500);
+}
+
+.border-slate-600-hover:hover {
+  border-color: var(--COLOR-SLATE-600);
+}
+
+.border-solid {
+  border-style: solid;
+}
+
+.border-thin {
+  border-width: thin;
+}
+
+.border-y-solid {
+  border-bottom-style: solid;
+  border-top-style: solid;
+}
+
+.border-y-thin {
+  border-bottom-width: thin;
+  border-top-width: thin;
 }

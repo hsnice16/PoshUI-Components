@@ -1,3 +1,7 @@
+.text-gray-500 {
+  color: var(--COLOR-GRAY-500);
+}
+
 .text-red-500 {
   color: var(--COLOR-RED-500);
 }

@@ -13,3 +13,15 @@
 .h-12 {
   height: 12rem;
 }
+
+.h-28 {
+  height: 28rem;
+}
+
+.min-h-85 {
+  min-height: 85vh;
+}
+
+.min-h-15 {
+  min-height: 15vh;
+}
