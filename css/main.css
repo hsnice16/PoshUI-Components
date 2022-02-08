@@ -23,6 +23,8 @@
 
 @import url("utilities/background.css");
 @import url("utilities/border.css");
+@import url("utilities/border-radius.css");
+@import url("utilities/box-shadow.css");
 
 @import url("utilities/cursor.css");
 @import url("utilities/display.css");
@@ -32,6 +34,7 @@
 @import url("utilities/font-weight.css");
 
 @import url("utilities/height.css");
+@import url("utilities/line-height.css");
 @import url("utilities/margin.css");
 
 @import url("utilities/outline.css");
@@ -41,6 +44,7 @@
 
 @import url("utilities/text-align.css");
 @import url("utilities/text-color.css");
+@import url("utilities/text-decoration.css");
 @import url("utilities/translate.css");
 
 @import url("utilities/width.css");
