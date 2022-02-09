@@ -2,10 +2,9 @@
   background: white;
   border-radius: 0.5rem;
   box-shadow: 0.1rem 0.1rem 0.5rem var(--COLOR-SLATE-300);
-  max-width: 30rem;
-  min-width: 30rem;
+  width: 30rem;
   padding: 1.5rem;
-  transition: opacity 0.4s;
+  z-index: 1;
 }
 
 .toast-cross {
@@ -43,10 +42,10 @@
   margin-top: 1rem;
 }
 
-.hide-toast {
-  opacity: 0;
+.hide {
+  display: none;
 }
 
-.show-toast {
-  opacity: 0.95;
+.show {
+  display: block;
 }

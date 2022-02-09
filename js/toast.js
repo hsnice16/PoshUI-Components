@@ -1,13 +1,13 @@
 /******************** Toast ********************/
 
 const showToast = (toastElement) => {
-  toastElement.classList.remove("hide-toast");
-  toastElement.classList.add("show-toast");
+  toastElement.classList.remove("hide");
+  toastElement.classList.add("show");
 };
 
 const hideToast = (toastElement) => {
-  toastElement.classList.remove("show-toast");
-  toastElement.classList.add("hide-toast");
+  toastElement.classList.remove("show");
+  toastElement.classList.add("hide");
 };
 
 // Notification Toast
