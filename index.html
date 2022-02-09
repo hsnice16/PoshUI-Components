@@ -766,6 +766,69 @@
 
       <!-- Lists Component Ends -->
 
+      <!-- Modal Component Starts -->
+
+      <section class="section-component">
+        <h2 class="section-head">Modal</h2>
+
+        <div class="border-slate-300 border-thin border-solid modal">
+          <div class="modal-head">
+            Modal Head
+          </div>
+
+          <p class="modal-body">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </p>
+
+          <div class="modal-foot">
+            <button class="border-r-0p2 btn btn-primary-solid">Save</button>
+            <button class="border-r-0p2 btn btn-primary-outline">Close</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-component">
+        <h2 class="section-head">Modal Demo</h2>
+
+        <button id="modal-demo-btn" class="btn btn-primary-solid btn-squared">
+          Modal Demo
+        </button>
+
+        <div id="modal-container" class="hide modal-container">
+          <div class="mx-auto modal">
+            <div class="modal-head">
+              Modal Head
+            </div>
+
+            <p class="modal-body">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+
+            <div class="modal-foot">
+              <button
+                class="border-brand border-thin border-solid border-r-0p2 btn btn-primary-solid"
+              >
+                Save
+              </button>
+              <button
+                id="modal-close-btn"
+                class="border-r-0p2 btn btn-primary-outline px-1p5"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Modal Component Ends -->
+
       <!-- Toast Component Starts -->
 
       <section class="section-component">
@@ -775,7 +838,7 @@
           <div class="align-i-ctr flex toast-head">
             Notification from Posh UI
             <button class="ml-auto toast-cross">
-              <i class="fas fa-times m-auto"></i>
+              <i class="fas fa-times"></i>
             </button>
           </div>
 
@@ -800,7 +863,7 @@
           <div class="align-i-ctr flex toast-head">
             Notification from Posh UI
             <button id="toast-cross-btn" class="ml-auto toast-cross">
-              <i class="fas fa-times m-auto"></i>
+              <i class="fas fa-times"></i>
             </button>
           </div>
 
@@ -837,7 +900,7 @@
                   id="stacked-toast-2-cross-btn"
                   class="ml-auto toast-cross"
                 >
-                  <i class="fas fa-times m-auto"></i>
+                  <i class="fas fa-times"></i>
                 </button>
               </div>
 
@@ -858,7 +921,7 @@
                   id="stacked-toast-1-cross-btn"
                   class="ml-auto toast-cross"
                 >
-                  <i class="fas fa-times m-auto"></i>
+                  <i class="fas fa-times"></i>
                 </button>
               </div>
 
@@ -1034,6 +1097,6 @@
       <!-- Utilities Ends -->
     </div>
 
-    <script src="js/toast.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>

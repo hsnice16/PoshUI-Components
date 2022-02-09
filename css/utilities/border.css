@@ -14,6 +14,10 @@
   border-bottom-style: solid;
 }
 
+.border-brand {
+  border-color: var(--COLOR-BRAND);
+}
+
 .border-lime-500 {
   border-color: var(--COLOR-LIME-500);
 }

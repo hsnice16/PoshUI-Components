@@ -1,14 +1,33 @@
-/******************** Toast ********************/
-
-const showToast = (toastElement) => {
+const showElement = (toastElement) => {
   toastElement.classList.remove("hide");
   toastElement.classList.add("show");
 };
 
-const hideToast = (toastElement) => {
+const hideElement = (toastElement) => {
   toastElement.classList.remove("show");
   toastElement.classList.add("hide");
 };
+
+/******************** Modal ********************/
+
+const modalDemoBtn = document.querySelector("#modal-demo-btn");
+
+const modalContainer = document.querySelector("#modal-container");
+const modalCloseBtn = document.querySelector("#modal-close-btn");
+
+modalDemoBtn.addEventListener("click", () => {
+  showElement(modalContainer);
+});
+
+modalContainer.addEventListener("click", (event) => {
+  if (event.currentTarget === event.target) hideElement(modalContainer);
+});
+
+modalCloseBtn.addEventListener("click", () => {
+  hideElement(modalContainer);
+});
+
+/******************** Toast ********************/
 
 // Notification Toast
 
@@ -20,13 +39,13 @@ const notificationToast = document.querySelector("#notification-toast");
 const toastCrossBtn = document.querySelector("#toast-cross-btn");
 
 notificationToastDemoBtn.addEventListener("click", () => {
-  showToast(notificationToast);
+  showElement(notificationToast);
 
-  setTimeout(() => hideToast(notificationToast), 3000);
+  setTimeout(() => hideElement(notificationToast), 3000);
 });
 
 toastCrossBtn.addEventListener("click", () => {
-  hideToast(notificationToast);
+  hideElement(notificationToast);
 });
 
 // Stacked Toast
@@ -47,21 +66,21 @@ const stackedToastOne = document.querySelector("#stacked-toast-1");
 const stackedToastTwo = document.querySelector("#stacked-toast-2");
 
 firstStackedToastBtn.addEventListener("click", () => {
-  showToast(stackedToastOne);
+  showElement(stackedToastOne);
 
-  setTimeout(() => hideToast(stackedToastOne), 3000);
+  setTimeout(() => hideElement(stackedToastOne), 3000);
 });
 
 stackedToastOneCrossBtn.addEventListener("click", () => {
-  hideToast(stackedToastOne);
+  hideElement(stackedToastOne);
 });
 
 secondStackedToastBtn.addEventListener("click", () => {
-  showToast(stackedToastTwo);
+  showElement(stackedToastTwo);
 
-  setTimeout(() => hideToast(stackedToastTwo), 3000);
+  setTimeout(() => hideElement(stackedToastTwo), 3000);
 });
 
 stackedToastTwoCrossBtn.addEventListener("click", () => {
-  hideToast(stackedToastTwo);
+  hideElement(stackedToastTwo);
 });
