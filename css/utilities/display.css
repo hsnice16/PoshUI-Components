@@ -1,5 +1,9 @@
 /************************* Display **************************/
 
+.d-none {
+  display: none;
+}
+
 .inline {
   display: inline;
 }

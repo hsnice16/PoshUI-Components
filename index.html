@@ -766,6 +766,118 @@
 
       <!-- Lists Component Ends -->
 
+      <!-- Toast Component Starts -->
+
+      <section class="section-component">
+        <h2 class="section-head">Notification Toast</h2>
+
+        <div class="toast">
+          <div class="align-i-ctr flex toast-head">
+            Notification from Posh UI
+            <button class="ml-auto toast-cross">
+              <i class="fas fa-times m-auto"></i>
+            </button>
+          </div>
+
+          <p class="toast-msg">
+            Hey! Now you can design your project faster and better with
+            <a class="toast-link" href="https://poshui.netlify.app">Posh UI</a>
+          </p>
+        </div>
+      </section>
+
+      <section class="section-component">
+        <h2 class="section-head">Notification Toast Demo</h2>
+
+        <button
+          id="notification-toast-demo-btn"
+          class="btn btn-primary-solid btn-squared"
+        >
+          Toast Demo
+        </button>
+
+        <div
+          id="notification-toast"
+          class="bottom-2 fixed hide-toast right-2 toast"
+        >
+          <div class="align-i-ctr flex toast-head">
+            Notification from Posh UI
+            <button id="toast-cross-btn" class="ml-auto toast-cross">
+              <i class="fas fa-times m-auto"></i>
+            </button>
+          </div>
+
+          <p class="toast-msg">
+            Hey! Now you can design your project faster and better with
+            <a class="toast-link" href="https://poshui.netlify.app">Posh UI</a>
+          </p>
+        </div>
+      </section>
+
+      <section class="section-component">
+        <h2 class="section-head">Stacked Notification Toast Demo</h2>
+
+        <button
+          id="first-stacked-toast-btn"
+          class="btn btn-primary-solid btn-squared"
+        >
+          First Stacked Toast
+        </button>
+
+        <button
+          id="second-stacked-toast-btn"
+          class="btn btn-primary-solid btn-squared"
+        >
+          Second Stacked Toast
+        </button>
+
+        <ul class="bottom-2 fixed right-2 stacked-toast">
+          <li class="mt-1">
+            <div id="stacked-toast-2" class="hide-toast toast">
+              <div class="align-i-ctr flex toast-head">
+                Notification from Posh UI
+                <button
+                  id="stacked-toast-2-cross-btn"
+                  class="ml-auto toast-cross"
+                >
+                  <i class="fas fa-times m-auto"></i>
+                </button>
+              </div>
+
+              <p class="toast-msg">
+                Hey! Now you can design your project faster and better with
+                <a class="toast-link" href="https://poshui.netlify.app"
+                  >Posh UI</a
+                >
+              </p>
+            </div>
+          </li>
+
+          <li class="mt-1">
+            <div id="stacked-toast-1" class="hide-toast toast">
+              <div class="align-i-ctr flex toast-head">
+                Notification from Posh UI
+                <button
+                  id="stacked-toast-1-cross-btn"
+                  class="ml-auto toast-cross"
+                >
+                  <i class="fas fa-times m-auto"></i>
+                </button>
+              </div>
+
+              <p class="toast-msg">
+                Hey! Now you can design your project faster and better with
+                <a class="toast-link" href="https://poshui.netlify.app"
+                  >Posh UI</a
+                >
+              </p>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <!-- Toast Component Ends -->
+
       <!-- Typography Starts -->
 
       <section class="section-component">
@@ -924,5 +1036,7 @@
 
       <!-- Utilities Ends -->
     </div>
+
+    <script src="js/toast.js"></script>
   </body>
 </html>

@@ -19,6 +19,8 @@
 @import url("components/Image/image.css");
 @import url("components/Input/input.css");
 
+@import url("components/Toast/toast.css");
+
 /** Utilities **/
 
 @import url("utilities/background.css");
@@ -45,6 +47,7 @@
 @import url("utilities/overflow.css");
 
 @import url("utilities/padding.css");
+@import url("utilities/position.css");
 
 @import url("utilities/text-align.css");
 @import url("utilities/text-color.css");
