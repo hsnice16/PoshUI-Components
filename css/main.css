@@ -19,6 +19,7 @@
 @import url("components/Image/image.css");
 @import url("components/Input/input.css");
 
+@import url("components/Modal/modal.css");
 @import url("components/Toast/toast.css");
 
 /** Utilities **/
