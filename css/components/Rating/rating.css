@@ -1,0 +1,43 @@
+.ratings {
+  border: none;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+}
+
+.ratings input {
+  display: none;
+}
+
+.ratings label,
+.rating-star {
+  color: var(--COLOR-SLATE-300);
+  cursor: pointer;
+  font-size: 4rem;
+  position: relative;
+}
+
+.ratings label::before {
+  content: "\2605";
+  position: absolute;
+}
+
+.ratings label:hover::before,
+.ratings label:hover ~ label::before,
+.rating-star.filled {
+  color: var(--COLOR-AMBER-500);
+}
+
+.ratings input:checked ~ label::before {
+  color: var(--COLOR-AMBER-500);
+}
+
+.ratings input:checked ~ label:hover::before {
+  color: var(--COLOR-AMBER-400);
+}
+
+.half-star {
+  width: 1.65rem;
+  overflow: hidden;
+  transform: translateX(100%);
+}
