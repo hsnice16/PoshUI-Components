@@ -15,17 +15,23 @@ const modalDemoBtn = document.querySelector("#modal-demo-btn");
 const modalContainer = document.querySelector("#modal-container");
 const modalCloseBtn = document.querySelector("#modal-close-btn");
 
-modalDemoBtn.addEventListener("click", () => {
-  showElement(modalContainer);
-});
+if (modalDemoBtn) {
+  modalDemoBtn.addEventListener("click", () => {
+    showElement(modalContainer);
+  });
+}
 
-modalContainer.addEventListener("click", (event) => {
-  if (event.currentTarget === event.target) hideElement(modalContainer);
-});
+if (modalContainer) {
+  modalContainer.addEventListener("click", (event) => {
+    if (event.currentTarget === event.target) hideElement(modalContainer);
+  });
+}
 
-modalCloseBtn.addEventListener("click", () => {
-  hideElement(modalContainer);
-});
+if (modalCloseBtn) {
+  modalCloseBtn.addEventListener("click", () => {
+    hideElement(modalContainer);
+  });
+}
 
 /******************** Toast ********************/
 
@@ -38,15 +44,19 @@ const notificationToastDemoBtn = document.querySelector(
 const notificationToast = document.querySelector("#notification-toast");
 const toastCrossBtn = document.querySelector("#toast-cross-btn");
 
-notificationToastDemoBtn.addEventListener("click", () => {
-  showElement(notificationToast);
+if (notificationToastDemoBtn) {
+  notificationToastDemoBtn.addEventListener("click", () => {
+    showElement(notificationToast);
 
-  setTimeout(() => hideElement(notificationToast), 3000);
-});
+    setTimeout(() => hideElement(notificationToast), 3000);
+  });
+}
 
-toastCrossBtn.addEventListener("click", () => {
-  hideElement(notificationToast);
-});
+if (toastCrossBtn) {
+  toastCrossBtn.addEventListener("click", () => {
+    hideElement(notificationToast);
+  });
+}
 
 // Stacked Toast
 
@@ -65,22 +75,30 @@ const stackedToastTwoCrossBtn = document.querySelector(
 const stackedToastOne = document.querySelector("#stacked-toast-1");
 const stackedToastTwo = document.querySelector("#stacked-toast-2");
 
-firstStackedToastBtn.addEventListener("click", () => {
-  showElement(stackedToastOne);
+if (firstStackedToastBtn) {
+  firstStackedToastBtn.addEventListener("click", () => {
+    showElement(stackedToastOne);
 
-  setTimeout(() => hideElement(stackedToastOne), 3000);
-});
+    setTimeout(() => hideElement(stackedToastOne), 3000);
+  });
+}
 
-stackedToastOneCrossBtn.addEventListener("click", () => {
-  hideElement(stackedToastOne);
-});
+if (stackedToastOneCrossBtn) {
+  stackedToastOneCrossBtn.addEventListener("click", () => {
+    hideElement(stackedToastOne);
+  });
+}
 
-secondStackedToastBtn.addEventListener("click", () => {
-  showElement(stackedToastTwo);
+if (secondStackedToastBtn) {
+  secondStackedToastBtn.addEventListener("click", () => {
+    showElement(stackedToastTwo);
 
-  setTimeout(() => hideElement(stackedToastTwo), 3000);
-});
+    setTimeout(() => hideElement(stackedToastTwo), 3000);
+  });
+}
 
-stackedToastTwoCrossBtn.addEventListener("click", () => {
-  hideElement(stackedToastTwo);
-});
+if (stackedToastTwoCrossBtn) {
+  stackedToastTwoCrossBtn.addEventListener("click", () => {
+    hideElement(stackedToastTwo);
+  });
+}

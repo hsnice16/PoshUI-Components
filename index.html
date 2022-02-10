@@ -772,9 +772,7 @@
         <h2 class="section-head">Modal</h2>
 
         <div class="border-slate-300 border-thin border-solid modal">
-          <div class="modal-head">
-            Modal Head
-          </div>
+          <div class="modal-head">Modal Head</div>
 
           <p class="modal-body">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -799,9 +797,7 @@
 
         <div id="modal-container" class="hide modal-container">
           <div class="mx-auto modal">
-            <div class="modal-head">
-              Modal Head
-            </div>
+            <div class="modal-head">Modal Head</div>
 
             <p class="modal-body">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -828,6 +824,69 @@
       </section>
 
       <!-- Modal Component Ends -->
+
+      <!-- Navigation Component Starts -->
+
+      <section class="section-component">
+        <h2 class="section-head">Desktop Variation One</h2>
+
+        <div class="bg-stone nav-container">
+          <nav class="align-i-ctr flex justify-c-sb py-1 px-2">
+            <div class="align-i-ctr flex justify-c-sb">
+              <img
+                class="img-brand-logo"
+                src="assets/pngs/logo-bg-stone.png"
+                alt="flaticon cart logo"
+              />
+
+              <a
+                class="flex flex-direction-col ml-1"
+                href="https://inclusive-mart.netlify.app"
+                target="_blank"
+              >
+                <span class="fs-1p7 text-white">Inclusive</span>
+                <span class="mart-text text-red-500">Mart</span>
+              </a>
+            </div>
+
+            <form
+              class="align-i-ctr bg-white border-r-0p2 flex fs-1p5 h-3p5 justify-c-sb overflow-hidden px-1"
+            >
+              <input
+                class="border-none fs-1p6 outline-none p-0p5 text-slate-800 w-25"
+                type="text"
+                placeholder="search for product"
+              />
+              <button
+                class="bg-red-500-hover btn btn-error-solid h-100pct mr-n1 py-0p5 px-1p5"
+                type="submit"
+              >
+                <i class="fas fa-search"></i>
+              </button>
+            </form>
+
+            <div class="align-i-ctr flex justify-c-sb">
+              <button
+                class="btn bg-white bg-white-hover border-r-0p2 translate-y"
+              >
+                Log In
+              </button>
+
+              <a href="#" class="badge-btn mx-2 text-white translate-y">
+                <i class="fas fa-heart"></i>
+                <span class="badge-count bg-red-500">0</span>
+              </a>
+
+              <a href="#" class="badge-btn mr-1 text-white translate-y">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="badge-count bg-red-500">0</span>
+              </a>
+            </div>
+          </nav>
+        </div>
+      </section>
+
+      <!-- Navigation Component Ends -->
 
       <!-- Toast Component Starts -->
 
@@ -859,7 +918,7 @@
           Toast Demo
         </button>
 
-        <div id="notification-toast" class="absolute hide toast">
+        <div id="notification-toast" class="fixed bottom-2 right-2 hide toast">
           <div class="align-i-ctr flex toast-head">
             Notification from Posh UI
             <button id="toast-cross-btn" class="ml-auto toast-cross">

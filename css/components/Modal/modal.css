@@ -14,7 +14,7 @@
   left: 0;
   background: var(--COLOR-OVERLAY);
   z-index: 1;
-  padding-top: 4rem;
+  padding: 4rem 1rem 0;
 }
 
 .modal-cross {
