@@ -32,7 +32,8 @@
   color: var(--COLOR-AMBER-500);
 }
 
-.ratings input:checked ~ label:hover::before {
+.ratings input:checked ~ label:hover::before,
+.ratings input:checked ~ label:hover ~ label::before {
   color: var(--COLOR-AMBER-400);
 }
 

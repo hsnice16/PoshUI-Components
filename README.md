@@ -13,6 +13,13 @@
 - Card
 - Image
 - Input
+- Grid
+- List
+- Modal
+- Navigation
+- Rating
+- Toast
+- Typography
 
 ---
 
