@@ -1,0 +1,223 @@
+table,
+tr {
+  border-collapse: collapse;
+  border: thin solid var(--COLOR-SLATE-300);
+  border-left: none;
+  border-right: none;
+}
+
+thead {
+  background: var(--COLOR-BRAND);
+  color: var(--COLOR-WHITE);
+}
+
+tbody tr:nth-child(even) {
+  background: var(--COLOR-WHITE);
+}
+
+th,
+td {
+  padding: 1rem 1.2rem;
+}
+
+td span {
+  background: var(--COLOR-BRAND-LIGHT);
+  color: var(--COLOR-BRAND-DARK);
+  display: inline-block;
+  font-weight: bold;
+  padding: 0.2rem;
+}
+
+table .color-view {
+  height: 2rem;
+  border: thin solid;
+}
+
+/** AMBER **/
+
+.color-view.amber-200 {
+  background: var(--COLOR-AMBER-200);
+  border-color: var(--COLOR-AMBER-200);
+}
+
+.color-view.amber-400 {
+  background: var(--COLOR-AMBER-400);
+  border-color: var(--COLOR-AMBER-400);
+}
+
+.color-view.amber-500 {
+  background: var(--COLOR-AMBER-500);
+  border-color: var(--COLOR-AMBER-500);
+}
+
+.color-view.amber-600 {
+  background: var(--COLOR-AMBER-600);
+  border-color: var(--COLOR-AMBER-600);
+}
+
+/** CYAN **/
+
+.color-view.cyan-50 {
+  background: var(--COLOR-CYAN-50);
+  border-color: var(--COLOR-CYAN-50);
+}
+
+.color-view.cyan-200 {
+  background: var(--COLOR-CYAN-200);
+  border-color: var(--COLOR-CYAN-200);
+}
+
+.color-view.cyan-500 {
+  background: var(--COLOR-CYAN-500);
+  border-color: var(--COLOR-CYAN-500);
+}
+
+.color-view.cyan-600 {
+  background: var(--COLOR-CYAN-600);
+  border-color: var(--COLOR-CYAN-600);
+}
+
+/* GLOSSY BLUE */
+
+.color-view.glossy-blue-100 {
+  background: var(--COLOR-GLOSSY-BLUE-100);
+  border-color: var(--COLOR-GLOSSY-BLUE-100);
+}
+
+.color-view.glossy-blue-500 {
+  background: var(--COLOR-GLOSSY-BLUE-500);
+  border-color: var(--COLOR-GLOSSY-BLUE-500);
+}
+
+.color-view.glossy-blue-700 {
+  background: var(--COLOR-GLOSSY-BLUE-700);
+  border-color: var(--COLOR-GLOSSY-BLUE-700);
+}
+
+/** GRAY **/
+
+.color-view.gray-500 {
+  background: var(--COLOR-GRAY-500);
+  border-color: var(--COLOR-GRAY-500);
+}
+
+/** LIME **/
+
+.color-view.lime-200 {
+  background: var(--COLOR-LIME-200);
+  border-color: var(--COLOR-LIME-200);
+}
+
+.color-view.lime-500 {
+  background: var(--COLOR-LIME-500);
+  border-color: var(--COLOR-LIME-500);
+}
+
+.color-view.lime-600 {
+  background: var(--COLOR-LIME-600);
+  border-color: var(--COLOR-LIME-600);
+}
+
+/** OVERLAY **/
+
+.color-view.overlay {
+  background: var(--COLOR-OVERLAY);
+  border-color: var(--COLOR-OVERLAY);
+}
+
+/** RED **/
+
+.color-view.red-50 {
+  background: var(--COLOR-RED-50);
+  border-color: var(--COLOR-RED-50);
+}
+
+.color-view.red-200 {
+  background: var(--COLOR-RED-200);
+  border-color: var(--COLOR-RED-200);
+}
+
+.color-view.red-500 {
+  background: var(--COLOR-RED-500);
+  border-color: var(--COLOR-RED-500);
+}
+
+.color-view.red-600 {
+  background: var(--COLOR-RED-600);
+  border-color: var(--COLOR-RED-600);
+}
+
+/** OVERLAY **/
+
+.color-view.shadow-light {
+  background: var(--COLOR-SHADOW-LIGHT);
+  border-color: var(--COLOR-SHADOW-LIGHT);
+}
+
+/** SLATE **/
+
+.color-view.slate-50 {
+  background: var(--COLOR-SLATE-50);
+  border-color: var(--COLOR-SLATE-300);
+}
+
+.color-view.slate-300 {
+  background: var(--COLOR-SLATE-300);
+  border-color: var(--COLOR-SLATE-300);
+}
+
+.color-view.slate-400 {
+  background: var(--COLOR-SLATE-400);
+  border-color: var(--COLOR-SLATE-400);
+}
+
+.color-view.slate-500 {
+  background: var(--COLOR-SLATE-500);
+  border-color: var(--COLOR-SLATE-500);
+}
+
+.color-view.slate-600 {
+  background: var(--COLOR-SLATE-600);
+  border-color: var(--COLOR-SLATE-600);
+}
+
+.color-view.slate-700 {
+  background: var(--COLOR-SLATE-700);
+  border-color: var(--COLOR-SLATE-700);
+}
+
+.color-view.slate-800 {
+  background: var(--COLOR-SLATE-800);
+  border-color: var(--COLOR-SLATE-800);
+}
+
+/** STONE **/
+
+.color-view.stone-50 {
+  background: var(--COLOR-STONE-50);
+  border-color: var(--COLOR-STONE-50);
+}
+
+.color-view.stone {
+  background: var(--COLOR-STONE);
+  border-color: var(--COLOR-STONE);
+}
+
+/** WHITE **/
+
+.color-view.white {
+  background: var(--COLOR-WHITE);
+  border-color: var(--COLOR-SLATE-300);
+}
+
+/** YELLOW **/
+
+.color-view.yellow {
+  background: var(--COLOR-YELLOW);
+  border-color: var(--COLOR-YELLOW);
+}
+
+.color-view.yellow-600 {
+  background: var(--COLOR-YELLOW-600);
+  border-color: var(--COLOR-YELLOW-600);
+}

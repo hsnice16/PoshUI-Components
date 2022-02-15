@@ -1,6 +1,18 @@
 .card-dismiss {
-  box-shadow: 0 0 2rem 0.5rem var(--COLOR-SLATE-300);
+  box-shadow: 0 0 1rem 0.2rem var(--COLOR-SLATE-300);
   flex-direction: column;
   max-width: 35rem;
   padding: 2rem;
+}
+
+.card-dismiss .card-icon-btn {
+  font-size: 1.5rem;
+  height: 2rem;
+  padding-top: 0.2rem;
+  width: 2rem;
+}
+
+.card-dismiss .card-head {
+  font-size: 2rem;
+  margin-top: 0;
 }

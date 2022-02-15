@@ -12,6 +12,7 @@
   border-radius: 50%;
   color: var(--COLOR-SLATE-800);
   height: 2rem;
+  margin-left: auto;
   width: 2rem;
 }
 
@@ -20,7 +21,15 @@
   color: var(--COLOR-SLATE-600);
 }
 
+.toast-fixed {
+  bottom: 2rem;
+  position: fixed;
+  right: 2rem;
+}
+
 .toast-head {
+  align-items: center;
+  display: flex;
   font-size: 1.5rem;
   font-weight: bold;
   color: var(--COLOR-SLATE-800);
@@ -37,8 +46,9 @@
 }
 
 .toast-msg {
-  font-size: 1.4rem;
   color: var(--COLOR-SLATE-700);
+  font-size: 1.4rem;
+  line-height: 1.5em;
   margin-top: 1rem;
 }
 

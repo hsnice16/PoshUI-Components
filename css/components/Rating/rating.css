@@ -17,23 +17,18 @@
   position: relative;
 }
 
-.ratings label::before {
-  content: "\2605";
-  position: absolute;
-}
-
-.ratings label:hover::before,
-.ratings label:hover ~ label::before,
+.ratings label:hover,
+.ratings label:hover ~ label,
 .rating-star.filled {
   color: var(--COLOR-AMBER-500);
 }
 
-.ratings input:checked ~ label::before {
+.ratings input:checked ~ label {
   color: var(--COLOR-AMBER-500);
 }
 
-.ratings input:checked ~ label:hover::before,
-.ratings input:checked ~ label:hover ~ label::before {
+.ratings input:checked ~ label:hover,
+.ratings input:checked ~ label:hover ~ label {
   color: var(--COLOR-AMBER-400);
 }
 
