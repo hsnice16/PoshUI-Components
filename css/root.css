@@ -1,22 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 
 :root {
-  --COLOR-ADD-CART: #ffd814;
-  --COLOR-ADD-CART-DARK: #f4cf13;
-
   --COLOR-AMBER-200: #fde68a;
   --COLOR-AMBER-400: #fbbf24;
   --COLOR-AMBER-500: #f59e0b;
   --COLOR-AMBER-600: #d97706;
 
-  --COLOR-BRAND: #0d5be1;
-  --COLOR-BRAND-DARK: #0a49b4;
-  --COLOR-BRAND-LIGHT: #cfdef9;
-
   --COLOR-CYAN-50: #ecfeff;
   --COLOR-CYAN-200: #a5f3fc;
   --COLOR-CYAN-500: #06b6d4;
   --COLOR-CYAN-600: #0891b2;
+
+  --COLOR-GLOSSY-BLUE-100: #cfdef9;
+  --COLOR-GLOSSY-BLUE-500: #0d5be1;
+  --COLOR-GLOSSY-BLUE-700: #0a49b4;
 
   --COLOR-GRAY-500: #6b7280;
 
@@ -42,8 +39,13 @@
   --COLOR-SLATE-800: #1e293b;
 
   --COLOR-STONE: #333;
+  --COLOR-STONE-50: #454444;
 
-  --COLOR-WHITE: white;
+  --COLOR-WHITE: #fff;
+
+  --COLOR-YELLOW: #ffd814;
+  --COLOR-YELLOW-600: #f4cf13;
+
   font-family: "Lato", sans-serif;
 }
 

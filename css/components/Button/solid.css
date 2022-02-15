@@ -1,5 +1,6 @@
 .btn-error-solid {
   background: var(--COLOR-RED-500);
+  border: thin solid var(--COLOR-RED-500);
   color: var(--COLOR-WHITE);
 }
 
@@ -9,6 +10,7 @@
 
 .btn-primary-solid {
   background: var(--COLOR-BRAND);
+  border: thin solid var(--COLOR-BRAND-DARK);
   color: var(--COLOR-WHITE);
 }
 
@@ -18,6 +20,7 @@
 
 .btn-secondary-solid {
   background: var(--COLOR-SLATE-500);
+  border: thin solid var(--COLOR-SLATE-500);
   color: var(--COLOR-WHITE);
 }
 
@@ -27,6 +30,7 @@
 
 .btn-success-solid {
   background: var(--COLOR-LIME-500);
+  border: thin solid var(--COLOR-LIME-500);
   color: var(--COLOR-WHITE);
 }
 

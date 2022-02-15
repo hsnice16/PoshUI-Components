@@ -717,46 +717,32 @@
       <section class="section-component">
         <h2 class="section-head">Notification Stacked List</h2>
 
-        <ul
-          class="border-thin border-solid border-slate-500 border-r-0p2 max-w-20"
-        >
-          <li
-            class="border-bottom-medium border-bottom-solid border-slate-500 px-0p5 py-1"
-          >
-            <a class="flex text-slate-800 fw-bold" href="#"
+        <ul class="stacked-list">
+          <li class="shadow-light">
+            <a href="#"
               >New Notification 1
-              <span class="ml-auto text-slate-600 translate-y"
-                ><i class="fas fa-times"></i></span
+              <span class="translate-y"><i class="fas fa-times"></i></span
             ></a>
           </li>
 
-          <li
-            class="border-bottom-medium border-bottom-solid border-slate-500 px-0p5 py-1"
-          >
-            <a class="flex text-slate-800 fw-bold" href="#"
+          <li class="shadow-light">
+            <a href="#"
               >New Notification 2
-              <span class="ml-auto text-slate-600 translate-y"
-                ><i class="fas fa-times"></i></span
+              <span class="translate-y"><i class="fas fa-times"></i></span
             ></a>
           </li>
 
-          <li
-            class="border-bottom-medium border-bottom-solid border-lime-500 px-0p5 py-1"
-          >
-            <a class="flex text-lime-600 fw-bold" href="#"
+          <li class="shadow-light">
+            <a class="viewed" href="#"
               >Viewed Notification
-              <span class="ml-auto text-lime-500 translate-y"
-                ><i class="fas fa-check"></i></span
+              <span class="translate-y"><i class="fas fa-check"></i></span
             ></a>
           </li>
 
-          <li
-            class="border-bottom-medium border-bottom-solid border-lime-500 px-0p5 py-1"
-          >
-            <a class="flex text-lime-600 fw-bold" href="#"
+          <li class="shadow-light">
+            <a class="viewed" href="#"
               >Viewed Notification
-              <span class="ml-auto text-lime-500 translate-y"
-                ><i class="fas fa-check"></i></span
+              <span class="translate-y"><i class="fas fa-check"></i></span
             ></a>
           </li>
         </ul>
@@ -771,7 +757,7 @@
       <section class="section-component">
         <h2 class="section-head">Modal</h2>
 
-        <div class="border-slate-300 border-thin border-solid modal">
+        <div class="modal">
           <div class="modal-head">Modal Head</div>
 
           <p class="modal-body">
@@ -782,8 +768,8 @@
           </p>
 
           <div class="modal-foot">
-            <button class="border-r-0p2 btn btn-primary-solid">Save</button>
-            <button class="border-r-0p2 btn btn-primary-outline">Close</button>
+            <button class="btn btn-primary-outline">Close</button>
+            <button class="btn btn-primary-solid">Save Changes</button>
           </div>
         </div>
       </section>
@@ -807,17 +793,10 @@
             </p>
 
             <div class="modal-foot">
-              <button
-                class="border-brand border-thin border-solid border-r-0p2 btn btn-primary-solid"
-              >
-                Save
-              </button>
-              <button
-                id="modal-close-btn"
-                class="border-r-0p2 btn btn-primary-outline px-1p5"
-              >
+              <button id="modal-close-btn" class="btn btn-primary-outline">
                 Close
               </button>
+              <button class="btn btn-primary-solid">Save Changes</button>
             </div>
           </div>
         </div>
@@ -830,9 +809,9 @@
       <section class="section-component">
         <h2 class="section-head">Desktop Variation One</h2>
 
-        <div class="bg-stone nav-container">
-          <nav class="align-i-ctr flex justify-c-sb py-1 px-2">
-            <div class="align-i-ctr flex justify-c-sb">
+        <div class="navbar-container">
+          <nav class="navbar">
+            <div class="navbar-align">
               <img
                 class="img-brand-logo"
                 src="assets/pngs/logo-bg-stone.png"
@@ -840,37 +819,24 @@
               />
 
               <a
-                class="flex flex-direction-col ml-1"
+                class="brand-name"
                 href="https://inclusive-mart.netlify.app"
                 target="_blank"
               >
-                <span class="fs-1p7 text-white">Inclusive</span>
-                <span class="mart-text text-red-500">Mart</span>
+                <span>Inclusive</span>
+                <span class="mart-text">Mart</span>
               </a>
             </div>
 
-            <form
-              class="align-i-ctr bg-white border-r-0p2 flex fs-1p5 h-3p5 justify-c-sb overflow-hidden px-1"
-            >
-              <input
-                class="border-none fs-1p6 outline-none p-0p5 text-slate-800 w-25"
-                type="text"
-                placeholder="search for product"
-              />
-              <button
-                class="bg-red-500-hover btn btn-error-solid h-100pct mr-n1 py-0p5 px-1p5"
-                type="submit"
-              >
+            <form class="navbar-form">
+              <input type="text" placeholder="search for product" />
+              <button type="submit">
                 <i class="fas fa-search"></i>
               </button>
             </form>
 
-            <div class="align-i-ctr flex justify-c-sb">
-              <button
-                class="btn bg-white bg-white-hover border-r-0p2 translate-y"
-              >
-                Log In
-              </button>
+            <div class="navbar-align">
+              <button class="navbar-btn-log translate-y">Log In</button>
 
               <a href="#" class="badge-btn mx-2 text-white translate-y">
                 <i class="fas fa-heart"></i>
@@ -883,6 +849,15 @@
               </a>
             </div>
           </nav>
+          <div class="navbar-md-container">
+            <form class="navbar-form">
+              <input type="text" placeholder="search for product" />
+              <button type="submit">
+                <i class="fas fa-search"></i>
+              </button>
+            </form>
+            <button class="navbar-btn-log translate-y">Log In</button>
+          </div>
         </div>
       </section>
 
@@ -954,14 +929,14 @@
         <h2 class="section-head">Notification Toast</h2>
 
         <div class="toast">
-          <div class="align-i-ctr flex toast-head">
+          <div class="toast-head">
             Notification from Posh UI
-            <button class="ml-auto toast-cross">
+            <button class="toast-cross">
               <i class="fas fa-times"></i>
             </button>
           </div>
 
-          <p class="toast-msg lh-1p5">
+          <p class="toast-msg">
             Hey! Now you can design your project faster and better with
             <a class="toast-link" href="https://poshui.netlify.app">Posh UI</a>
           </p>
@@ -978,15 +953,15 @@
           Toast Demo
         </button>
 
-        <div id="notification-toast" class="fixed bottom-2 right-2 hide toast">
-          <div class="align-i-ctr flex toast-head">
+        <div id="notification-toast" class="hide toast toast-fixed">
+          <div class="toast-head">
             Notification from Posh UI
-            <button id="toast-cross-btn" class="ml-auto toast-cross">
+            <button id="toast-cross-btn" class="toast-cross">
               <i class="fas fa-times"></i>
             </button>
           </div>
 
-          <p class="toast-msg lh-1p5">
+          <p class="toast-msg">
             Hey! Now you can design your project faster and better with
             <a class="toast-link" href="https://poshui.netlify.app">Posh UI</a>
           </p>
@@ -1010,20 +985,17 @@
           Second Stacked Toast
         </button>
 
-        <ul class="bottom-2 fixed right-2 stacked-toast">
+        <ul class="stacked-toast toast-fixed">
           <li class="mt-1">
             <div id="stacked-toast-2" class="hide toast">
-              <div class="align-i-ctr flex toast-head">
+              <div class="toast-head">
                 Notification from Posh UI
-                <button
-                  id="stacked-toast-2-cross-btn"
-                  class="ml-auto toast-cross"
-                >
+                <button id="stacked-toast-2-cross-btn" class="toast-cross">
                   <i class="fas fa-times"></i>
                 </button>
               </div>
 
-              <p class="toast-msg lh-1p5">
+              <p class="toast-msg">
                 Hey! Now you can design your project faster and better with
                 <a class="toast-link" href="https://poshui.netlify.app"
                   >Posh UI</a
@@ -1034,17 +1006,14 @@
 
           <li class="mt-1">
             <div id="stacked-toast-1" class="hide toast">
-              <div class="align-i-ctr flex toast-head">
+              <div class="toast-head">
                 Notification from Posh UI
-                <button
-                  id="stacked-toast-1-cross-btn"
-                  class="ml-auto toast-cross"
-                >
+                <button id="stacked-toast-1-cross-btn" class="toast-cross">
                   <i class="fas fa-times"></i>
                 </button>
               </div>
 
-              <p class="toast-msg lh-1p5">
+              <p class="toast-msg">
                 Hey! Now you can design your project faster and better with
                 <a class="toast-link" href="https://poshui.netlify.app"
                   >Posh UI</a
@@ -1159,6 +1128,515 @@
       </section>
 
       <!-- Background Ends -->
+
+      <!-- Color Starts -->
+
+      <section class="section-component">
+        <h2 class="section-head">Color</h2>
+
+        <div class="py-1">
+          <h3 class="my-1">Amber</h3>
+
+          <table>
+            <thead>
+              <tr>
+                <th>Variable Name</th>
+                <th>Variable Value</th>
+                <th>Color</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>
+                  <span>--COLOR-AMBER-200</span>
+                </td>
+                <td>
+                  <span>#fde68a</span>
+                </td>
+                <td><div class="color-view amber-200"></div></td>
+              </tr>
+              <tr>
+                <td>
+                  <span>--COLOR-AMBER-400</span>
+                </td>
+                <td>
+                  <span>#fbbf24</span>
+                </td>
+                <td><div class="color-view amber-400"></div></td>
+              </tr>
+              <tr>
+                <td>
+                  <span>--COLOR-AMBER-500</span>
+                </td>
+                <td>
+                  <span>#f59e0b</span>
+                </td>
+                <td><div class="color-view amber-500"></div></td>
+              </tr>
+              <tr>
+                <td>
+                  <span>--COLOR-AMBER-600</span>
+                </td>
+                <td>
+                  <span>#d97706</span>
+                </td>
+                <td><div class="color-view amber-600"></div></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="py-1">
+          <h3 class="my-1">Cyan</h3>
+
+          <table>
+            <thead>
+              <tr>
+                <th>Variable Name</th>
+                <th>Variable Value</th>
+                <th>Color</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>
+                  <span>--COLOR-CYAN-50</span>
+                </td>
+                <td>
+                  <span>#ecfeff</span>
+                </td>
+                <td><div class="color-view cyan-50"></div></td>
+              </tr>
+              <tr>
+                <td>
+                  <span>--COLOR-CYAN-200</span>
+                </td>
+                <td>
+                  <span>#a5f3fc</span>
+                </td>
+                <td><div class="color-view cyan-200"></div></td>
+              </tr>
+              <tr>
+                <td>
+                  <span>--COLOR-CYAN-500</span>
+                </td>
+                <td>
+                  <span>#06b6d4</span>
+                </td>
+                <td><div class="color-view cyan-500"></div></td>
+              </tr>
+              <tr>
+                <td>
+                  <span>--COLOR-CYAN-600</span>
+                </td>
+                <td>
+                  <span>#0891b2</span>
+                </td>
+                <td><div class="color-view cyan-600"></div></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="py-1">
+          <h3 class="my-1">Glossy Blue</h3>
+
+          <table>
+            <thead>
+              <tr>
+                <th>Variable Name</th>
+                <th>Variable Value</th>
+                <th>Color</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>
+                  <span>--COLOR-GLOSSY-BLUE-100</span>
+                </td>
+                <td>
+                  <span>#cfdef9</span>
+                </td>
+                <td><div class="color-view glossy-blue-100"></div></td>
+              </tr>
+              <tr>
+                <td>
+                  <span>--COLOR-GLOSSY-BLUE-500</span>
+                </td>
+                <td>
+                  <span>#0d5be1</span>
+                </td>
+                <td><div class="color-view glossy-blue-500"></div></td>
+              </tr>
+              <tr>
+                <td>
+                  <span>--COLOR-GLOSSY-BLUE-700</span>
+                </td>
+                <td>
+                  <span>#0a49b4</span>
+                </td>
+                <td><div class="color-view glossy-blue-700"></div></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="py-1">
+          <h3 class="my-1">Gray</h3>
+
+          <table>
+            <thead>
+              <tr>
+                <th>Variable Name</th>
+                <th>Variable Value</th>
+                <th>Color</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>
+                  <span>--COLOR-GRAY-500</span>
+                </td>
+                <td>
+                  <span>#6b7280</span>
+                </td>
+                <td><div class="color-view gray-500"></div></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="py-1">
+          <h3 class="my-1">Lime</h3>
+
+          <table>
+            <thead>
+              <tr>
+                <th>Variable Name</th>
+                <th>Variable Value</th>
+                <th>Color</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>
+                  <span>--COLOR-LIME-200</span>
+                </td>
+                <td>
+                  <span>#d9f99d</span>
+                </td>
+                <td><div class="color-view lime-200"></div></td>
+              </tr>
+              <tr>
+                <td>
+                  <span>--COLOR-LIME-500</span>
+                </td>
+                <td>
+                  <span>#84cc16</span>
+                </td>
+                <td><div class="color-view lime-500"></div></td>
+              </tr>
+              <tr>
+                <td>
+                  <span>--COLOR-LIME-600</span>
+                </td>
+                <td>
+                  <span>#65a30d</span>
+                </td>
+                <td><div class="color-view lime-600"></div></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="py-1">
+          <h3 class="my-1">Overlay</h3>
+
+          <table>
+            <thead>
+              <tr>
+                <th>Variable Name</th>
+                <th>Variable Value</th>
+                <th>Color</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>
+                  <span>--COLOR-OVERLAY</span>
+                </td>
+                <td>
+                  <span>rgba(51, 65, 85, 0.5)</span>
+                </td>
+                <td><div class="color-view overlay"></div></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="py-1">
+          <h3 class="my-1">Red</h3>
+
+          <table>
+            <thead>
+              <tr>
+                <th>Variable Name</th>
+                <th>Variable Value</th>
+                <th>Color</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>
+                  <span>--COLOR-RED-50</span>
+                </td>
+                <td>
+                  <span>#fadddd</span>
+                </td>
+                <td><div class="color-view red-50"></div></td>
+              </tr>
+              <tr>
+                <td>
+                  <span>--COLOR-RED-200</span>
+                </td>
+                <td>
+                  <span>#fecaca</span>
+                </td>
+                <td><div class="color-view red-200"></div></td>
+              </tr>
+              <tr>
+                <td>
+                  <span>--COLOR-RED-500</span>
+                </td>
+                <td>
+                  <span>#ef4444</span>
+                </td>
+                <td><div class="color-view red-500"></div></td>
+              </tr>
+              <tr>
+                <td>
+                  <span>--COLOR-RED-600</span>
+                </td>
+                <td>
+                  <span>#dc2626</span>
+                </td>
+                <td><div class="color-view red-600"></div></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="py-1">
+          <h3 class="my-1">Shadow Light</h3>
+
+          <table>
+            <thead>
+              <tr>
+                <th>Variable Name</th>
+                <th>Variable Value</th>
+                <th>Color</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>
+                  <span>--COLOR-SHADOW-LIGHT</span>
+                </td>
+                <td>
+                  <span>rgba(149, 157, 165, 0.2)</span>
+                </td>
+                <td><div class="color-view shadow-light"></div></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="py-1">
+          <h3 class="my-1">Slate</h3>
+
+          <table>
+            <thead>
+              <tr>
+                <th>Variable Name</th>
+                <th>Variable Value</th>
+                <th>Color</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>
+                  <span>--COLOR-SLATE-50</span>
+                </td>
+                <td>
+                  <span>#f8fafc</span>
+                </td>
+                <td><div class="color-view slate-50"></div></td>
+              </tr>
+              <tr>
+                <td>
+                  <span>--COLOR-SLATE-300</span>
+                </td>
+                <td>
+                  <span>#cbd5e1</span>
+                </td>
+                <td><div class="color-view slate-300"></div></td>
+              </tr>
+              <tr>
+                <td>
+                  <span>--COLOR-SLATE-400</span>
+                </td>
+                <td>
+                  <span>#94a3b8</span>
+                </td>
+                <td><div class="color-view slate-400"></div></td>
+              </tr>
+              <tr>
+                <td>
+                  <span>--COLOR-SLATE-500</span>
+                </td>
+                <td>
+                  <span>#64748b</span>
+                </td>
+                <td><div class="color-view slate-500"></div></td>
+              </tr>
+              <tr>
+                <td>
+                  <span>--COLOR-SLATE-600</span>
+                </td>
+                <td>
+                  <span>#475569</span>
+                </td>
+                <td><div class="color-view slate-600"></div></td>
+              </tr>
+              <tr>
+                <td>
+                  <span>--COLOR-SLATE-700</span>
+                </td>
+                <td>
+                  <span>#334155</span>
+                </td>
+                <td><div class="color-view slate-700"></div></td>
+              </tr>
+              <tr>
+                <td>
+                  <span>--COLOR-SLATE-800</span>
+                </td>
+                <td>
+                  <span>#1e293b</span>
+                </td>
+                <td><div class="color-view slate-800"></div></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="py-1">
+          <h3 class="my-1">Stone</h3>
+
+          <table>
+            <thead>
+              <tr>
+                <th>Variable Name</th>
+                <th>Variable Value</th>
+                <th>Color</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>
+                  <span>--COLOR-STONE-50</span>
+                </td>
+                <td>
+                  <span>#454444</span>
+                </td>
+                <td><div class="color-view stone-50"></div></td>
+              </tr>
+              <tr>
+                <td>
+                  <span>--COLOR-STONE</span>
+                </td>
+                <td>
+                  <span>#333</span>
+                </td>
+                <td><div class="color-view stone"></div></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="py-1">
+          <h3 class="my-1">White</h3>
+
+          <table>
+            <thead>
+              <tr>
+                <th>Variable Name</th>
+                <th>Variable Value</th>
+                <th>Color</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>
+                  <span>--COLOR-WHITE</span>
+                </td>
+                <td>
+                  <span>#fff</span>
+                </td>
+                <td><div class="color-view white"></div></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="py-1">
+          <h3 class="my-1">Yellow</h3>
+
+          <table>
+            <thead>
+              <tr>
+                <th>Variable Name</th>
+                <th>Variable Value</th>
+                <th>Color</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>
+                  <span>--COLOR-YELLOW</span>
+                </td>
+                <td>
+                  <span>#ffd814</span>
+                </td>
+                <td><div class="color-view yellow"></div></td>
+              </tr>
+              <tr>
+                <td>
+                  <span>--COLOR-YELLOW-600</span>
+                </td>
+                <td>
+                  <span>#f4cf13</span>
+                </td>
+                <td><div class="color-view yellow-600"></div></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- Color Ends -->
 
       <!-- Font Size Starts -->
 

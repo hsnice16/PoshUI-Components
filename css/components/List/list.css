@@ -1,0 +1,37 @@
+.stacked-list {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  margin: 3rem auto;
+  max-width: 35rem;
+  padding: 2rem 0;
+}
+
+.stacked-list a {
+  color: var(--COLOR-SLATE-800);
+  display: flex;
+}
+
+.stacked-list a span {
+  color: var(--COLOR-SLATE-500);
+  margin-left: auto;
+}
+
+.stacked-list li {
+  background: var(--COLOR-WHITE);
+  border-bottom: medium solid var(--COLOR-BRAND);
+  border-radius: 0.2rem;
+  font-size: 2rem;
+  padding: 1rem;
+  width: 100%;
+}
+
+.stacked-list .viewed {
+  color: var(--COLOR-LIME-600);
+}
+
+.stacked-list .viewed span {
+  color: var(--COLOR-LIME-500);
+  margin-left: auto;
+}

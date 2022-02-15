@@ -1,10 +1,26 @@
+/**
+ * Remove and add CSS class to DOM element
+ *
+ * @param {HTMLDivElement} toastElement - reference to div element on DOM
+ */
 const showElement = (toastElement) => {
+  // remove .hide class from the classList
   toastElement.classList.remove("hide");
+
+  // add .show class in the classList
   toastElement.classList.add("show");
 };
 
+/**
+ * Remove and add CSS class to DOM element
+ *
+ * @param {HTMLDivElement} toastElement - reference to div element on DOM
+ */
 const hideElement = (toastElement) => {
+  // remove .show class from the classList
   toastElement.classList.remove("show");
+
+  // add .hide class in the classList
   toastElement.classList.add("hide");
 };
 
@@ -15,18 +31,21 @@ const modalDemoBtn = document.querySelector("#modal-demo-btn");
 const modalContainer = document.querySelector("#modal-container");
 const modalCloseBtn = document.querySelector("#modal-close-btn");
 
+// if modalDemoBtn has value (not null) only then add event listener
 if (modalDemoBtn) {
   modalDemoBtn.addEventListener("click", () => {
     showElement(modalContainer);
   });
 }
 
+// if modalContainer has value (not null) only then add event listener
 if (modalContainer) {
   modalContainer.addEventListener("click", (event) => {
     if (event.currentTarget === event.target) hideElement(modalContainer);
   });
 }
 
+// if modalCloseBtn has value (not null) only then add event listener
 if (modalCloseBtn) {
   modalCloseBtn.addEventListener("click", () => {
     hideElement(modalContainer);
@@ -44,6 +63,7 @@ const notificationToastDemoBtn = document.querySelector(
 const notificationToast = document.querySelector("#notification-toast");
 const toastCrossBtn = document.querySelector("#toast-cross-btn");
 
+// if notificationToastDemoBtn has value (not null) only then add event listener
 if (notificationToastDemoBtn) {
   notificationToastDemoBtn.addEventListener("click", () => {
     showElement(notificationToast);
@@ -52,6 +72,7 @@ if (notificationToastDemoBtn) {
   });
 }
 
+// if toastCrossBtn has value (not null) only then add event listener
 if (toastCrossBtn) {
   toastCrossBtn.addEventListener("click", () => {
     hideElement(notificationToast);
@@ -75,6 +96,7 @@ const stackedToastTwoCrossBtn = document.querySelector(
 const stackedToastOne = document.querySelector("#stacked-toast-1");
 const stackedToastTwo = document.querySelector("#stacked-toast-2");
 
+// if firstStackedToastBtn has value (not null) only then add event listener
 if (firstStackedToastBtn) {
   firstStackedToastBtn.addEventListener("click", () => {
     showElement(stackedToastOne);
@@ -83,12 +105,14 @@ if (firstStackedToastBtn) {
   });
 }
 
+// if stackedToastOneCrossBtn has value (not null) only then add event listener
 if (stackedToastOneCrossBtn) {
   stackedToastOneCrossBtn.addEventListener("click", () => {
     hideElement(stackedToastOne);
   });
 }
 
+// if secondStackedToastBtn has value (not null) only then add event listener
 if (secondStackedToastBtn) {
   secondStackedToastBtn.addEventListener("click", () => {
     showElement(stackedToastTwo);
@@ -97,6 +121,7 @@ if (secondStackedToastBtn) {
   });
 }
 
+// if stackedToastTwoCrossBtn has value (not null) only then add event listener
 if (stackedToastTwoCrossBtn) {
   stackedToastTwoCrossBtn.addEventListener("click", () => {
     hideElement(stackedToastTwo);

@@ -1,5 +1,11 @@
 @import url("css/main.css");
 
+:root {
+  --COLOR-BRAND: var(--COLOR-GLOSSY-BLUE-500);
+  --COLOR-BRAND-DARK: var(--COLOR-GLOSSY-BLUE-700);
+  --COLOR-BRAND-LIGHT: var(--COLOR-GLOSSY-BLUE-100);
+}
+
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
