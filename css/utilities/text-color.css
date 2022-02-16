@@ -14,6 +14,10 @@
   color: var(--COLOR-RED-500);
 }
 
+.text-slate-500 {
+  color: var(--COLOR-SLATE-500);
+}
+
 .text-slate-600 {
   color: var(--COLOR-SLATE-600);
 }

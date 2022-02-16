@@ -2,6 +2,10 @@
   align-items: center;
 }
 
+.align-i-fs {
+  align-items: flex-start;
+}
+
 .flex-direction-col {
   flex-direction: column;
 }

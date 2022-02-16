@@ -55,6 +55,28 @@ table .color-view {
   border-color: var(--COLOR-AMBER-600);
 }
 
+/** BLUE **/
+
+.color-view.blue-50 {
+  background: var(--COLOR-BLUE-50);
+  border-color: var(--COLOR-BLUE-50);
+}
+
+.color-view.blue-300 {
+  background: var(--COLOR-BLUE-300);
+  border-color: var(--COLOR-BLUE-300);
+}
+
+.color-view.blue-500 {
+  background: var(--COLOR-BLUE-500);
+  border-color: var(--COLOR-BLUE-500);
+}
+
+.color-view.blue-800 {
+  background: var(--COLOR-BLUE-800);
+  border-color: var(--COLOR-BLUE-800);
+}
+
 /** CYAN **/
 
 .color-view.cyan-50 {
