@@ -23,7 +23,9 @@
 @import url("components/Modal/modal.css");
 @import url("components/Navigation/navigation.css");
 @import url("components/Rating/rating.css");
+
 @import url("components/Toast/toast.css");
+@import url("components/Tooltip/tooltip.css");
 
 /** Table **/
 
