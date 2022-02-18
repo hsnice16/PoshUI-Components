@@ -28,13 +28,6 @@
   background: var(--COLOR-RED-500);
 }
 
-.navbar {
-  align-items: center;
-  display: flex;
-  justify-content: space-between;
-  padding: 1rem 2rem;
-}
-
 .navbar-align {
   align-items: center;
   display: flex;

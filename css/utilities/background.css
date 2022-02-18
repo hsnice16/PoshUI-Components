@@ -1,17 +1,5 @@
 /*********************** Background ************************/
 
-.bg-add-cart {
-  background: var(--COLOR-ADD-CART);
-}
-
-.bg-add-cart-dark {
-  background: var(--COLOR-ADD-CART-DARK);
-}
-
-.bg-add-cart-hover:hover {
-  background: var(--COLOR-ADD-CART-DARK);
-}
-
 .bg-amber-500 {
   background: var(--COLOR-AMBER-500);
 }
@@ -62,6 +50,18 @@
 
 .bg-white-hover:hover {
   background: var(--COLOR-WHITE);
+}
+
+.bg-yellow {
+  background: var(--COLOR-YELLOW);
+}
+
+.bg-yellow-600 {
+  background: var(--COLOR-YELLOW-600);
+}
+
+.bg-yellow-600:hover {
+  background: var(--COLOR-YELLOW-600);
 }
 
 /**************************** -- ****************************/
