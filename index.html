@@ -6,9 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PoshUI Components</title>
 
-    <!-- custom css -->
-    <link rel="stylesheet" href="app.css" />
-
     <!-- font awesome -->
     <link
       rel="stylesheet"
@@ -17,6 +14,9 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="app.css" />
   </head>
   <body>
     <div class="container m-auto">
@@ -803,7 +803,7 @@
           Modal Demo
         </button>
 
-        <div id="modal-container" class="hide modal-container">
+        <div id="modal-container" class="d-none modal-container">
           <div class="mx-auto modal">
             <div class="modal-head">Modal Head</div>
 
@@ -872,6 +872,92 @@
               </a>
             </div>
           </nav>
+
+          <div class="navbar-md-container">
+            <form class="navbar-form">
+              <input type="text" placeholder="search for product" />
+              <button type="submit">
+                <i class="fas fa-search"></i>
+              </button>
+            </form>
+            <button class="navbar-btn-log translate-y">Log In</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-component">
+        <h2 class="section-head">Mobile Variation One</h2>
+        <p class="section-text">
+          You can resize the browser width to see the hamburger in action
+        </p>
+
+        <div class="navbar-container">
+          <nav class="navbar-align px-2 py-1">
+            <div class="navbar-align">
+              <img
+                loading="lazy"
+                class="img-brand-logo"
+                src="assets/pngs/logo-bg-stone.png"
+                alt="flaticon cart logo"
+              />
+
+              <a
+                class="brand-name"
+                href="https://inclusive-mart.netlify.app"
+                target="_blank"
+              >
+                <span>Inclusive</span>
+                <span class="mart-text">Mart</span>
+              </a>
+            </div>
+
+            <form class="navbar-form">
+              <input type="text" placeholder="search for product" />
+              <button type="submit">
+                <i class="fas fa-search"></i>
+              </button>
+            </form>
+
+            <div class="navbar-align navbar-sm">
+              <button class="navbar-btn-log translate-y">Log In</button>
+
+              <a href="#" class="badge-btn mx-2 text-white translate-y">
+                <i class="fas fa-heart"></i>
+                <span class="badge-count bg-red-500">0</span>
+              </a>
+
+              <a href="#" class="badge-btn mr-1 text-white translate-y">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="badge-count bg-red-500">0</span>
+              </a>
+            </div>
+
+            <div class="navbar-sm-container relative">
+              <button class="btn-sm-navbar translate-y">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-times d-none"></i>
+              </button>
+
+              <ul class="d-none navbar-sm-list">
+                <li class="my-1">
+                  <a class="translate-y" href="#">
+                    <i class="fas fa-heart mx-0p5"></i> Wishlist
+                  </a>
+                </li>
+                <li class="my-1">
+                  <a class="translate-y" href="#">
+                    <i class="fas fa-shopping-cart mx-0p5"></i> Cart
+                  </a>
+                </li>
+                <li class="my-1">
+                  <a class="translate-y" href="#">
+                    <i class="fas fa-door-open mx-0p5"></i> Log In
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+
           <div class="navbar-md-container">
             <form class="navbar-form">
               <input type="text" placeholder="search for product" />
@@ -976,7 +1062,7 @@
           Toast Demo
         </button>
 
-        <div id="notification-toast" class="hide toast toast-fixed">
+        <div id="notification-toast" class="d-none toast toast-fixed">
           <div class="toast-head">
             Notification from Posh UI
             <button id="toast-cross-btn" class="toast-cross">
@@ -1010,7 +1096,7 @@
 
         <ul class="stacked-toast toast-fixed">
           <li class="mt-1">
-            <div id="stacked-toast-2" class="hide toast">
+            <div id="stacked-toast-2" class="d-none toast">
               <div class="toast-head">
                 Notification from Posh UI
                 <button id="stacked-toast-2-cross-btn" class="toast-cross">
@@ -1028,7 +1114,7 @@
           </li>
 
           <li class="mt-1">
-            <div id="stacked-toast-1" class="hide toast">
+            <div id="stacked-toast-1" class="d-none toast">
               <div class="toast-head">
                 Notification from Posh UI
                 <button id="stacked-toast-1-cross-btn" class="toast-cross">
