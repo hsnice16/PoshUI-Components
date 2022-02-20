@@ -1,0 +1,40 @@
+.navbar-sm-container {
+  display: none;
+}
+
+@media only screen and (max-width: 36em) {
+  .btn-sm-navbar {
+    background: unset;
+    border: none;
+    color: white;
+    font-size: 2rem;
+  }
+
+  .navbar-sm > .badge-btn,
+  .navbar-md-container .navbar-btn-log {
+    display: none;
+  }
+
+  .navbar-sm-container {
+    display: unset;
+  }
+
+  .navbar-sm-list {
+    background: var(--COLOR-STONE-50);
+    border-radius: 0.2rem;
+    padding: 1rem;
+    position: absolute;
+    right: 0;
+    width: 12rem;
+    z-index: 9;
+  }
+
+  .navbar-sm-list a {
+    color: var(--COLOR-WHITE);
+    display: inline-block;
+  }
+
+  .navbar-sm-list a:hover {
+    color: var(--COLOR-RED-50);
+  }
+}

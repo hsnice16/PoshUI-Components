@@ -1,29 +1,3 @@
-/**
- * Remove and add CSS class to DOM element
- *
- * @param {HTMLDivElement} toastElement - reference to div element on DOM
- */
-const showElement = (toastElement) => {
-  // remove .hide class from the classList
-  toastElement.classList.remove("hide");
-
-  // add .show class in the classList
-  toastElement.classList.add("show");
-};
-
-/**
- * Remove and add CSS class to DOM element
- *
- * @param {HTMLDivElement} toastElement - reference to div element on DOM
- */
-const hideElement = (toastElement) => {
-  // remove .show class from the classList
-  toastElement.classList.remove("show");
-
-  // add .hide class in the classList
-  toastElement.classList.add("hide");
-};
-
 /******************** Modal ********************/
 
 const modalDemoBtn = document.querySelector("#modal-demo-btn");
@@ -31,24 +5,43 @@ const modalDemoBtn = document.querySelector("#modal-demo-btn");
 const modalContainer = document.querySelector("#modal-container");
 const modalCloseBtn = document.querySelector("#modal-close-btn");
 
-// if modalDemoBtn has value (not null) only then add event listener
+/* 
+  if modalDemoBtn has value (not null) only 
+  then add event listener
+*/
 if (modalDemoBtn) {
   modalDemoBtn.addEventListener("click", () => {
-    showElement(modalContainer);
+    // d-none ---> display: none;
+    modalContainer.classList.remove("d-none");
   });
 }
 
-// if modalContainer has value (not null) only then add event listener
 if (modalContainer) {
   modalContainer.addEventListener("click", (event) => {
-    if (event.currentTarget === event.target) hideElement(modalContainer);
+    if (event.currentTarget === event.target)
+      modalContainer.classList.add("d-none");
   });
 }
 
-// if modalCloseBtn has value (not null) only then add event listener
 if (modalCloseBtn) {
   modalCloseBtn.addEventListener("click", () => {
-    hideElement(modalContainer);
+    modalContainer.classList.add("d-none");
+  });
+}
+
+/*********** Navigation - Hamburger ************/
+
+const btnSmNavbar = document.querySelector(".btn-sm-navbar");
+const navHamburgerIcon = document.querySelector(".btn-sm-navbar .fas.fa-bars");
+const navCrossIcon = document.querySelector(".btn-sm-navbar .fas.fa-times");
+
+const navbarSmList = document.querySelector(".navbar-sm-list");
+
+if (btnSmNavbar) {
+  btnSmNavbar.addEventListener("click", () => {
+    navHamburgerIcon.classList.toggle("d-none");
+    navCrossIcon.classList.toggle("d-none");
+    navbarSmList.classList.toggle("d-none");
   });
 }
 
@@ -63,19 +56,19 @@ const notificationToastDemoBtn = document.querySelector(
 const notificationToast = document.querySelector("#notification-toast");
 const toastCrossBtn = document.querySelector("#toast-cross-btn");
 
-// if notificationToastDemoBtn has value (not null) only then add event listener
 if (notificationToastDemoBtn) {
   notificationToastDemoBtn.addEventListener("click", () => {
-    showElement(notificationToast);
+    notificationToast.classList.remove("d-none");
 
-    setTimeout(() => hideElement(notificationToast), 3000);
+    setTimeout(() => {
+      notificationToast.classList.add("d-none");
+    }, 3000);
   });
 }
 
-// if toastCrossBtn has value (not null) only then add event listener
 if (toastCrossBtn) {
   toastCrossBtn.addEventListener("click", () => {
-    hideElement(notificationToast);
+    notificationToast.classList.add("d-none");
   });
 }
 
@@ -96,34 +89,34 @@ const stackedToastTwoCrossBtn = document.querySelector(
 const stackedToastOne = document.querySelector("#stacked-toast-1");
 const stackedToastTwo = document.querySelector("#stacked-toast-2");
 
-// if firstStackedToastBtn has value (not null) only then add event listener
 if (firstStackedToastBtn) {
   firstStackedToastBtn.addEventListener("click", () => {
-    showElement(stackedToastOne);
+    stackedToastOne.classList.remove("d-none");
 
-    setTimeout(() => hideElement(stackedToastOne), 3000);
+    setTimeout(() => {
+      stackedToastOne.classList.add("d-none");
+    }, 3000);
   });
 }
 
-// if stackedToastOneCrossBtn has value (not null) only then add event listener
 if (stackedToastOneCrossBtn) {
   stackedToastOneCrossBtn.addEventListener("click", () => {
-    hideElement(stackedToastOne);
+    stackedToastOne.classList.add("d-none");
   });
 }
 
-// if secondStackedToastBtn has value (not null) only then add event listener
 if (secondStackedToastBtn) {
   secondStackedToastBtn.addEventListener("click", () => {
-    showElement(stackedToastTwo);
+    stackedToastTwo.classList.remove("d-none");
 
-    setTimeout(() => hideElement(stackedToastTwo), 3000);
+    setTimeout(() => {
+      stackedToastTwo.classList.add("d-none");
+    }, 3000);
   });
 }
 
-// if stackedToastTwoCrossBtn has value (not null) only then add event listener
 if (stackedToastTwoCrossBtn) {
   stackedToastTwoCrossBtn.addEventListener("click", () => {
-    hideElement(stackedToastTwo);
+    stackedToastTwo.classList.add("d-none");
   });
 }
