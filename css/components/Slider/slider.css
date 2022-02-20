@@ -1,0 +1,63 @@
+.slider {
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+  cursor: pointer;
+  width: 22rem;
+}
+
+.slider:focus {
+  outline: none;
+}
+
+/** Chromium based **/
+.slider::-webkit-slider-runnable-track {
+  background: var(--COLOR-GLOSSY-BLUE-100);
+  border-radius: 0.5rem;
+  height: 0.5rem;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  background: var(--COLOR-GLOSSY-BLUE-500);
+  border-radius: 50%;
+  height: 1.5rem;
+  transform: translateY(-30%);
+  width: 1.5rem;
+}
+
+.slider::-webkit-slider-thumb:hover {
+  background: var(--COLOR-GLOSSY-BLUE-700);
+}
+
+.slider:focus::-webkit-slider-thumb {
+  border: thin solid var(--COLOR-GLOSSY-BLUE-700);
+  outline: thin solid var(--COLOR-GLOSSY-BLUE-700);
+  outline-offset: 0.25rem;
+}
+
+/** for Firefox **/
+.slider::-moz-range-track {
+  background: var(--COLOR-GLOSSY-BLUE-100);
+  border-radius: 0.5rem;
+  height: 0.5rem;
+}
+
+.slider::-moz-range-thumb {
+  background: var(--COLOR-GLOSSY-BLUE-500);
+  border: none;
+  border-radius: 50%;
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+.slider::-moz-range-thumb:hover {
+  background: var(--COLOR-GLOSSY-BLUE-700);
+}
+
+.slider:focus::-moz-range-thumb {
+  border: thin solid var(--COLOR-GLOSSY-BLUE-700);
+  outline: thin solid var(--COLOR-GLOSSY-BLUE-700);
+  outline-offset: 0.25rem;
+}
