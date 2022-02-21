@@ -1,6 +1,6 @@
 # PoshUI Components
 
-### This repo contains the implementation of components of the <a href="https://github.com/hsnice16/PoshUI-Documentation" target="_blank">Posh UI</a> component library.
+### This repo contains the implementation of components of the [Posh UI](https://github.com/hsnice16/PoshUI-Documentation) component library.
 
 ---
 
