@@ -18,7 +18,9 @@
 - Modal
 - Navigation
 - Rating
+- Slider
 - Toast
+- Tooltip
 - Typography
 
 ---
