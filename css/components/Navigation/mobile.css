@@ -11,7 +11,7 @@
   }
 
   .navbar-sm > .badge-btn,
-  .navbar-md-container .navbar-btn-log {
+  .navbar-sm .navbar-btn-log {
     display: none;
   }
 
