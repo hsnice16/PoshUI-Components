@@ -25,4 +25,12 @@
 
 ---
 
+## Features
+
+- most of the components are
+    + keyboard accessible
+    + responsive
+
+---
+
 ![Posh UI Component](assets/gifs/poshui-comp.gif)

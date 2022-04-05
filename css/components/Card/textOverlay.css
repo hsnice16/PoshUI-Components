@@ -26,6 +26,6 @@
   margin: 0 1rem;
 }
 
-.card-text-overlay:hover .overlay-content {
+.card-text-overlay:is(:hover, :focus) .overlay-content {
   opacity: 1;
 }
