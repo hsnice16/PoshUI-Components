@@ -50,10 +50,9 @@
   bottom: 0;
   content: "";
   height: 3rem;
-  margin-right: -28%;
   position: absolute;
   right: 0;
   top: 0;
-  transform: rotate(45deg);
+  transform: translateX(75%) rotate(45deg);
   width: 3rem;
 }
